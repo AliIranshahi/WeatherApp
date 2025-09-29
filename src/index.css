@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+[lang="fa-IR"] {
+  direction: ltr;
+}
+[lang="en"] {
+  direction: rtl;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f3fafe;
+}
+img {
+  max-width: 100%;
+}
+.f-f-vazir-medium {
+  font-family: "Vazir-Medium";
+}
+.f-f-vazir-light {
+  font-family: "Vazir-Light";
+}
+.f-f-vazir-bold {
+  font-family: "Vazir-Bold";
+}
+.f-f-vazir-regular {
+  font-family: "Vazir-Regular";
+}
+/* ---------  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  flex-direction: column;
+  padding: 10px;
+  text-align: right;
+  align-items: center;
+  justify-content: right;
+}
+.weather div {
+  gap: 20px;
+  text-align: center;
+}
+
+/* SWIPER */
+
+/* ANIM */
+
+/* ANIM */
+@media (min-width: 768px) {
+  .icon-object {
+    width: 750px;
+  }
+  .icon-object img {
+    width: 270px;
+  }
+  .icon-object img:first-child {
+    bottom: 10px;
+  }
+  .icon-object img:nth-child(2) {
+    bottom: 120px;
+    left: 3px;
+  }
+  .icon-object img:last-child {
+    top: 40px;
+  }
+  .weather {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .weather div {
+    gap: 5px;
+    text-align: center;
+  }
+}
+@media (min-width: 835px) {
+  .icon-object {
+    width: 815px;
+  }
+  .icon-object img {
+    width: 270px;
+  }
+  .icon-object img:first-child {
+    bottom: 10px;
+  }
+  .icon-object img:nth-child(2) {
+    bottom: 120px;
+    left: 20px;
+  }
+  .icon-object img:last-child {
+    top: 40px;
+  }
+  .weather {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .weather div {
+    gap: 5px;
+    text-align: center;
+  }
+}
+@media (min-width: 998px) {
+  .icon-object {
+    width: 990px;
+  }
+  .icon-object img {
+    width: 270px;
+  }
+  .icon-object img:first-child {
+    bottom: 50px;
+  }
+  .icon-object img:nth-child(2) {
+    bottom: 120px;
+    left: 0px;
+  }
+  .icon-object img:last-child {
+    top: 90px;
+  }
+  .weather {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .weather div {
+    gap: 5px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1215px) {
+  .icon-object {
+    width: 1190px;
+  }
+  .icon-object img {
+    width: 290px;
+  }
+  .weather {
+    flex-direction: row;
+    padding: 28px;
+    text-align: none;
+    align-items: normal;
+    justify-content: space-between;
+  }
+  .weather div {
+    gap: 13px;
+  }
+}
+
+@keyframes rotateDown {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateUp {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-down {
+  animation: rotateDown 0.5s forwards ease-in-out;
+}
+
+.rotate-up {
+  animation: rotateUp 0.5s forwards ease-in-out;
+}
