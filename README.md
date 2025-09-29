@@ -1,73 +1,64 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Weather Dashboard App
 
-Currently, two official plugins are available:
+A modern React-based web application that provides [a short description of what it does, e.g., weather information, city selection, dark/light mode toggle, multilingual support, etc.].
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+~~~~ Features ~~~~
 
-## React Compiler
+Responsive Design: Works on desktop and mobile devices.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Dark & Light Mode: Toggle between themes with smooth animations.
 
-## Expanding the ESLint configuration
+Multilingual Support: English and Persian (Farsi) translations using i18next.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+City Selection: Users can select cities from a dynamic dropdown menu.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Authentication: User login state managed via cookies.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clean UI/UX: Modern design with Material UI icons and custom components.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+~~~~ Tech Stack ~~~~
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Frontend: React, TypeScript, Tailwind CSS, Material UI
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+State Management: React Context API, useReducer
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Routing: React Router DOM
+
+Internationalization: i18next
+
+Cookies: react-cookie
+
+Build Tools: Vite
+
+~~~~ Folder Structure ~~~~
+src/
+├─ components/       # Reusable UI components
+├─ context/          # Context API for global state
+├─ constans/         # Static data like city info
+├─ hooks/            # Custom hooks
+├─ i18n/             # Translation files
+├─ pages/            # Page-level components
+├─ App.tsx           # Main app component
+└─ index.tsx  
+
+
+~~~~ Setup & Run ~~~~
+
+Clone the repository:
+
+git clone ----->
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Open http://localhost:5173 in your browser.
