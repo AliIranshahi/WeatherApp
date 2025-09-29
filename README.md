@@ -30,7 +30,12 @@ Internationalization: i18next
 
 Cookies: react-cookie
 
-Build Tools: Vite
+Build Tools: Vite 
+
+********* Important Note **********
+
+This project uses two different APIs, and some of them may not be fully compatible with each other.
+
 
 ~~~~ Folder Structure ~~~~
 src/
